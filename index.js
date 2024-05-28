@@ -15,8 +15,8 @@ app.use(bodyParser.json());
 const { print_connection } = require('./utilities/global');
 
 // Ports
-const express_port = 3000;
-const socket_port = 3001;
+const express_port = 3040;
+const socket_port = 3041;
 
 // Routes
 app.get('/', (req, res) => {
