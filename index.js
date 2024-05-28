@@ -21,7 +21,7 @@ const socket_port = 3041;
 // Routes
 app.get('/', (req, res) => {
     print_connection('/', req);
-    res.json({ message: `Hello from server!` });
+    res.json({ message: `Hello from server!`, data: 'Test1' });
 });
 
 // App listen
