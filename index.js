@@ -11,17 +11,29 @@ app.use(cors(corsOptions));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+// Import Routes
+const userRoutes = require('./services/users/users.routes');
+const commentRoutes = require('./services/comments/comments.routes');
+
 // Import Utils
 const { print_connection } = require('./utilities/global');
+const db = require('./database/db');
 
 // Ports
 const express_port = 3040;
 const socket_port = 3041;
 
-// Routes
-app.get('/', (req, res) => {
-    print_connection('/', req);
-    res.json({ message: `Hello from server!`, data: 'Test1' });
+// Database Connection
+db().then(() => {
+
+    // Routes
+    app.get('/', (req, res) => {
+        print_connection('/', req);
+        res.json({ message: `Hello from server!`, data: 'Test1' });
+    });
+
+    app.use('/users', userRoutes);
+    app.use('/comments', commentRoutes);
 });
 
 // App listen
