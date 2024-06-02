@@ -1,0 +1,835 @@
+﻿[
+    {
+        "businessRefId": "M22123_USAVA_F15B1E4F",
+        "consumerGroups": [],
+        "createdOnUtc": "2022-06-15T15:50:46.667Z",
+        "deleted": false,
+        "email": "bradley.stevenson@quivers.com",
+        "feedbackScore": null,
+        "firstname": "Bradley",
+        "id": 6622,
+        "lastname": "Stevenson",
+        "marketable": false,
+        "notes": [],
+        "phoneNumber": "+1-5551110000",
+        "picture": null,
+        "productReviews": [],
+        "referredBy": {
+            "firstname": null,
+            "id": null,
+            "lastname": null
+        },
+        "referredByConsumerId": null,
+        "referredConsumers": [],
+        "referredSales": [
+            {
+                "amount": 0,
+                "count": 0,
+                "currency": "EUR"
+            }
+        ],
+        "roi": [
+            {
+                "amount": 0,
+                "currency": "EUR"
+            }
+        ],
+        "sales": {
+            "orders": [],
+            "summaries": [
+                {
+                    "amount": 18173.98,
+                    "count": 9,
+                    "currency": "EUR"
+                }
+            ]
+        },
+        "surveys": [],
+        "updatedOnUtc": "2022-06-15T21:08:31.277Z"
+    },
+    {
+        "businessRefId": "M22123_USAVA_F15B1E4F",
+        "consumerGroups": [],
+        "createdOnUtc": "2023-08-08T18:57:35.837Z",
+        "deleted": false,
+        "email": "cole.kuivenhoven@quivers.com",
+        "feedbackScore": null,
+        "firstname": "Cole",
+        "id": 26374,
+        "lastname": "Kuivenhoven",
+        "marketable": false,
+        "notes": [],
+        "phoneNumber": null,
+        "picture": null,
+        "productReviews": [],
+        "referredBy": {
+            "firstname": null,
+            "id": null,
+            "lastname": null
+        },
+        "referredByConsumerId": null,
+        "referredConsumers": [],
+        "referredSales": [],
+        "roi": [],
+        "sales": {
+            "orders": [],
+            "summaries": []
+        },
+        "surveys": [],
+        "updatedOnUtc": null
+    },
+    {
+        "businessRefId": "M22123_USAVA_F15B1E4F",
+        "consumerGroups": [
+            {
+                "archived": false,
+                "currentPoints": 0,
+                "id": "6503a1d5-9805-4090-9ea1-f44758a581e4",
+                "name": "Prosumers",
+                "picture": null,
+                "referredSales": [],
+                "roi": [],
+                "sales": [],
+                "storefronts": [],
+                "totalPoints": 0
+            }
+        ],
+        "createdOnUtc": "2023-06-29T00:31:20.120Z",
+        "deleted": false,
+        "email": "baaooylplqvnlahgsh@nthrw.com",
+        "feedbackScore": null,
+        "firstname": "Cole",
+        "id": 26250,
+        "lastname": "ViewOnly",
+        "marketable": true,
+        "notes": [],
+        "phoneNumber": null,
+        "picture": null,
+        "productReviews": [],
+        "referredBy": {
+            "firstname": null,
+            "id": null,
+            "lastname": null
+        },
+        "referredByConsumerId": null,
+        "referredConsumers": [],
+        "referredSales": [],
+        "roi": [],
+        "sales": {
+            "orders": [],
+            "summaries": []
+        },
+        "surveys": [],
+        "updatedOnUtc": "2023-06-29T00:31:20.120Z"
+    },
+    {
+        "businessRefId": "M22123_USAVA_F15B1E4F",
+        "consumerGroups": [],
+        "createdOnUtc": "2023-07-26T21:55:57.950Z",
+        "deleted": false,
+        "email": "sean.luong+098765456789788@quivers.com",
+        "feedbackScore": null,
+        "firstname": "John",
+        "id": 26306,
+        "lastname": "Lopez",
+        "marketable": false,
+        "notes": [],
+        "phoneNumber": "+1-8788768797",
+        "picture": null,
+        "productReviews": [],
+        "referredBy": {
+            "firstname": null,
+            "id": null,
+            "lastname": null
+        },
+        "referredByConsumerId": null,
+        "referredConsumers": [],
+        "referredSales": [
+            {
+                "amount": 0,
+                "count": 0,
+                "currency": "USD"
+            }
+        ],
+        "roi": [
+            {
+                "amount": 0,
+                "currency": "USD"
+            }
+        ],
+        "sales": {
+            "orders": [],
+            "summaries": [
+                {
+                    "amount": 110.24,
+                    "count": 1,
+                    "currency": "USD"
+                }
+            ]
+        },
+        "surveys": [],
+        "updatedOnUtc": "2023-07-26T21:55:57.950Z"
+    },
+    {
+        "businessRefId": "M22123_USAVA_F15B1E4F",
+        "consumerGroups": [],
+        "createdOnUtc": "2023-08-25T21:22:11.797Z",
+        "deleted": false,
+        "email": "justin+stuart@quivers.com",
+        "feedbackScore": null,
+        "firstname": "Justin",
+        "id": 26799,
+        "lastname": "Frenzel",
+        "marketable": false,
+        "notes": [],
+        "phoneNumber": null,
+        "picture": null,
+        "productReviews": [],
+        "referredBy": {
+            "firstname": null,
+            "id": null,
+            "lastname": null
+        },
+        "referredByConsumerId": null,
+        "referredConsumers": [],
+        "referredSales": [],
+        "roi": [],
+        "sales": {
+            "orders": [],
+            "summaries": []
+        },
+        "surveys": [],
+        "updatedOnUtc": null
+    },
+    {
+        "businessRefId": "M22123_USAVA_F15B1E4F",
+        "consumerGroups": [],
+        "createdOnUtc": "2023-02-02T21:14:00.397Z",
+        "deleted": false,
+        "email": "justin.frenzel@gmail.com",
+        "feedbackScore": null,
+        "firstname": "Justin",
+        "id": 25903,
+        "lastname": "Frenzel",
+        "marketable": false,
+        "notes": [],
+        "phoneNumber": "+1-8054166948",
+        "picture": null,
+        "productReviews": [],
+        "referredBy": {
+            "firstname": null,
+            "id": null,
+            "lastname": null
+        },
+        "referredByConsumerId": null,
+        "referredConsumers": [],
+        "referredSales": [
+            {
+                "amount": 0,
+                "count": 0,
+                "currency": "CAD"
+            },
+            {
+                "amount": 0,
+                "count": 0,
+                "currency": "USD"
+            }
+        ],
+        "roi": [
+            {
+                "amount": 0,
+                "currency": "CAD"
+            },
+            {
+                "amount": 0,
+                "currency": "USD"
+            }
+        ],
+        "sales": {
+            "orders": [],
+            "summaries": [
+                {
+                    "amount": 60,
+                    "count": 1,
+                    "currency": "CAD"
+                },
+                {
+                    "amount": 125.22,
+                    "count": 4,
+                    "currency": "USD"
+                }
+            ]
+        },
+        "surveys": [],
+        "updatedOnUtc": "2023-02-03T00:24:31.370Z"
+    },
+    {
+        "businessRefId": "M22123_USAVA_F15B1E4F",
+        "consumerGroups": [
+            {
+                "archived": false,
+                "currentPoints": 15,
+                "id": "6503a1d5-9805-4090-9ea1-f44758a581e4",
+                "name": "Prosumers",
+                "picture": null,
+                "referredSales": [],
+                "roi": [],
+                "sales": [],
+                "storefronts": [],
+                "totalPoints": 15
+            }
+        ],
+        "createdOnUtc": "2023-02-03T23:08:48.187Z",
+        "deleted": false,
+        "email": "justin.frenzel@quivers.com",
+        "feedbackScore": null,
+        "firstname": "Justin",
+        "id": 25912,
+        "lastname": "Frenzel",
+        "marketable": false,
+        "notes": [],
+        "phoneNumber": "+1-8054166948",
+        "picture": {
+            "70": "https://az692577.vo.msecnd.net/product-images-thumb/target70_38496238__274-2742277_snowboard-icon-snowboarding-icon-png.png",
+            "80": "https://az692577.vo.msecnd.net/product-images-thumb/target80_38496238__274-2742277_snowboard-icon-snowboarding-icon-png.png",
+            "85": "https://az692577.vo.msecnd.net/product-images-thumb/target85_38496238__274-2742277_snowboard-icon-snowboarding-icon-png.png",
+            "125": "https://az692577.vo.msecnd.net/product-images-thumb/target125_38496238__274-2742277_snowboard-icon-snowboarding-icon-png.png",
+            "300": "https://az692577.vo.msecnd.net/product-images-thumb/target300_38496238__274-2742277_snowboard-icon-snowboarding-icon-png.png",
+            "600": "https://az692577.vo.msecnd.net/product-images-thumb/target600_38496238__274-2742277_snowboard-icon-snowboarding-icon-png.png",
+            "40_40": "https://az692577.vo.msecnd.net/product-images-thumb/maxw40_maxh40_38496238__274-2742277_snowboard-icon-snowboarding-icon-png.png",
+            "700_250": "https://az692577.vo.msecnd.net/product-images-thumb/maxw700_maxh250_38496238__274-2742277_snowboard-icon-snowboarding-icon-png.png",
+            "originalsize": "https://az692577.vo.msecnd.net/product-images/38496238__274-2742277_snowboard-icon-snowboarding-icon-png.png"
+        },
+        "productReviews": [],
+        "referredBy": {
+            "firstname": null,
+            "id": null,
+            "lastname": null
+        },
+        "referredByConsumerId": null,
+        "referredConsumers": [],
+        "referredSales": [
+            {
+                "amount": 0,
+                "count": 0,
+                "currency": "USD"
+            }
+        ],
+        "roi": [
+            {
+                "amount": 0,
+                "currency": "USD"
+            }
+        ],
+        "sales": {
+            "orders": [],
+            "summaries": [
+                {
+                    "amount": 30,
+                    "count": 1,
+                    "currency": "USD"
+                }
+            ]
+        },
+        "surveys": [],
+        "updatedOnUtc": null
+    },
+    {
+        "businessRefId": "M22123_USAVA_F15B1E4F",
+        "consumerGroups": [
+            {
+                "archived": false,
+                "currentPoints": 0,
+                "id": "6503a1d5-9805-4090-9ea1-f44758a581e4",
+                "name": "Prosumers",
+                "picture": null,
+                "referredSales": [],
+                "roi": [],
+                "sales": [],
+                "storefronts": [],
+                "totalPoints": 0
+            }
+        ],
+        "createdOnUtc": "2023-10-18T22:49:54.497Z",
+        "deleted": false,
+        "email": "justin+sales@quivers.com",
+        "feedbackScore": null,
+        "firstname": "Justin",
+        "id": 78373,
+        "lastname": "Frenzel",
+        "marketable": true,
+        "notes": [],
+        "phoneNumber": null,
+        "picture": null,
+        "productReviews": [],
+        "referredBy": {
+            "firstname": null,
+            "id": null,
+            "lastname": null
+        },
+        "referredByConsumerId": null,
+        "referredConsumers": [],
+        "referredSales": [],
+        "roi": [],
+        "sales": {
+            "orders": [],
+            "summaries": []
+        },
+        "surveys": [],
+        "updatedOnUtc": null
+    },
+    {
+        "businessRefId": "M22123_USAVA_F15B1E4F",
+        "consumerGroups": [],
+        "createdOnUtc": "2023-01-17T20:51:25.533Z",
+        "deleted": false,
+        "email": "kyle.cornelison@quivers.com",
+        "feedbackScore": null,
+        "firstname": "Kyle",
+        "id": 25862,
+        "lastname": "Cornelison",
+        "marketable": false,
+        "notes": [],
+        "phoneNumber": "+1-NULL",
+        "picture": {
+            "70": "https://az692577.vo.msecnd.net/product-images-thumb/target70_f4a32e97__TestReceipt.png",
+            "80": "https://az692577.vo.msecnd.net/product-images-thumb/target80_f4a32e97__TestReceipt.png",
+            "85": "https://az692577.vo.msecnd.net/product-images-thumb/target85_f4a32e97__TestReceipt.png",
+            "125": "https://az692577.vo.msecnd.net/product-images-thumb/target125_f4a32e97__TestReceipt.png",
+            "300": "https://az692577.vo.msecnd.net/product-images-thumb/target300_f4a32e97__TestReceipt.png",
+            "600": "https://az692577.vo.msecnd.net/product-images-thumb/target600_f4a32e97__TestReceipt.png",
+            "40_40": "https://az692577.vo.msecnd.net/product-images-thumb/maxw40_maxh40_f4a32e97__TestReceipt.png",
+            "700_250": "https://az692577.vo.msecnd.net/product-images-thumb/maxw700_maxh250_f4a32e97__TestReceipt.png",
+            "originalsize": "https://az692577.vo.msecnd.net/product-images/f4a32e97__TestReceipt.png"
+        },
+        "productReviews": [],
+        "referredBy": {
+            "firstname": null,
+            "id": null,
+            "lastname": null
+        },
+        "referredByConsumerId": null,
+        "referredConsumers": [],
+        "referredSales": [
+            {
+                "amount": 0,
+                "count": 0,
+                "currency": "EUR"
+            },
+            {
+                "amount": 0,
+                "count": 0,
+                "currency": "GBP"
+            },
+            {
+                "amount": 0,
+                "count": 0,
+                "currency": "JPY"
+            },
+            {
+                "amount": 0,
+                "count": 0,
+                "currency": "USD"
+            }
+        ],
+        "roi": [
+            {
+                "amount": 0,
+                "currency": "EUR"
+            },
+            {
+                "amount": 0,
+                "currency": "GBP"
+            },
+            {
+                "amount": 0,
+                "currency": "JPY"
+            },
+            {
+                "amount": 0,
+                "currency": "USD"
+            }
+        ],
+        "sales": {
+            "orders": [],
+            "summaries": [
+                {
+                    "amount": 5.16,
+                    "count": 1,
+                    "currency": "EUR"
+                },
+                {
+                    "amount": 2838.87,
+                    "count": 6,
+                    "currency": "GBP"
+                },
+                {
+                    "amount": 2780,
+                    "count": 1,
+                    "currency": "JPY"
+                },
+                {
+                    "amount": 2606.37,
+                    "count": 90,
+                    "currency": "USD"
+                }
+            ]
+        },
+        "surveys": [],
+        "updatedOnUtc": "2023-08-02T18:24:27.863Z"
+    },
+    {
+        "businessRefId": "M22123_USAVA_F15B1E4F",
+        "consumerGroups": [],
+        "createdOnUtc": "2022-11-16T16:00:28.860Z",
+        "deleted": false,
+        "email": "lester.tester@gmail.com",
+        "feedbackScore": null,
+        "firstname": "Lester",
+        "id": 25658,
+        "lastname": "Tester",
+        "marketable": true,
+        "notes": [],
+        "phoneNumber": "555-555-5545",
+        "picture": null,
+        "productReviews": [],
+        "referredBy": {
+            "firstname": null,
+            "id": null,
+            "lastname": null
+        },
+        "referredByConsumerId": null,
+        "referredConsumers": [],
+        "referredSales": [],
+        "roi": [],
+        "sales": {
+            "orders": [],
+            "summaries": []
+        },
+        "surveys": [],
+        "updatedOnUtc": null
+    },
+    {
+        "businessRefId": "M22123_USAVA_F15B1E4F",
+        "consumerGroups": [],
+        "createdOnUtc": "2024-05-22T14:50:02.840Z",
+        "deleted": false,
+        "email": "lester.tester@quivers.com",
+        "feedbackScore": null,
+        "firstname": "Lester",
+        "id": 78613,
+        "lastname": "Tester",
+        "marketable": false,
+        "notes": [],
+        "phoneNumber": null,
+        "picture": null,
+        "productReviews": [],
+        "referredBy": {
+            "firstname": null,
+            "id": null,
+            "lastname": null
+        },
+        "referredByConsumerId": null,
+        "referredConsumers": [],
+        "referredSales": [],
+        "roi": [],
+        "sales": {
+            "orders": [],
+            "summaries": []
+        },
+        "surveys": [],
+        "updatedOnUtc": null
+    },
+    {
+        "businessRefId": "M22123_USAVA_F15B1E4F",
+        "consumerGroups": [],
+        "createdOnUtc": "2023-09-28T16:40:46.410Z",
+        "deleted": false,
+        "email": "lester2.tester2@gmail.com",
+        "feedbackScore": null,
+        "firstname": "Lester2",
+        "id": 78214,
+        "lastname": "Tester2",
+        "marketable": false,
+        "notes": [],
+        "phoneNumber": null,
+        "picture": null,
+        "productReviews": [],
+        "referredBy": {
+            "firstname": null,
+            "id": null,
+            "lastname": null
+        },
+        "referredByConsumerId": null,
+        "referredConsumers": [],
+        "referredSales": [],
+        "roi": [],
+        "sales": {
+            "orders": [],
+            "summaries": []
+        },
+        "surveys": [],
+        "updatedOnUtc": null
+    },
+    {
+        "businessRefId": "M22123_USAVA_F15B1E4F",
+        "consumerGroups": [],
+        "createdOnUtc": "2023-09-28T16:46:11.603Z",
+        "deleted": false,
+        "email": "lester3.tester2@gmail.com",
+        "feedbackScore": null,
+        "firstname": "Lester3",
+        "id": 78215,
+        "lastname": "Tester3",
+        "marketable": false,
+        "notes": [],
+        "phoneNumber": null,
+        "picture": null,
+        "productReviews": [],
+        "referredBy": {
+            "firstname": null,
+            "id": null,
+            "lastname": null
+        },
+        "referredByConsumerId": null,
+        "referredConsumers": [],
+        "referredSales": [],
+        "roi": [],
+        "sales": {
+            "orders": [],
+            "summaries": []
+        },
+        "surveys": [],
+        "updatedOnUtc": null
+    },
+    {
+        "businessRefId": "M22123_USAVA_F15B1E4F",
+        "consumerGroups": [],
+        "createdOnUtc": "2023-09-28T16:47:26.933Z",
+        "deleted": false,
+        "email": "lester4.tester4@gmail.com",
+        "feedbackScore": null,
+        "firstname": "Lester4",
+        "id": 78216,
+        "lastname": "Tester4",
+        "marketable": false,
+        "notes": [],
+        "phoneNumber": null,
+        "picture": null,
+        "productReviews": [],
+        "referredBy": {
+            "firstname": null,
+            "id": null,
+            "lastname": null
+        },
+        "referredByConsumerId": null,
+        "referredConsumers": [],
+        "referredSales": [],
+        "roi": [],
+        "sales": {
+            "orders": [],
+            "summaries": []
+        },
+        "surveys": [],
+        "updatedOnUtc": null
+    },
+    {
+        "businessRefId": "M22123_USAVA_F15B1E4F",
+        "consumerGroups": [],
+        "createdOnUtc": "2023-10-30T20:02:42.470Z",
+        "deleted": false,
+        "email": "lester5.tester5@gmail.com",
+        "feedbackScore": null,
+        "firstname": "Lester5",
+        "id": 78418,
+        "lastname": "Tester5",
+        "marketable": false,
+        "notes": [],
+        "phoneNumber": null,
+        "picture": null,
+        "productReviews": [],
+        "referredBy": {
+            "firstname": null,
+            "id": null,
+            "lastname": null
+        },
+        "referredByConsumerId": null,
+        "referredConsumers": [],
+        "referredSales": [],
+        "roi": [],
+        "sales": {
+            "orders": [],
+            "summaries": []
+        },
+        "surveys": [],
+        "updatedOnUtc": null
+    },
+    {
+        "businessRefId": "M22123_USAVA_F15B1E4F",
+        "consumerGroups": [],
+        "createdOnUtc": "2023-10-30T20:03:27.817Z",
+        "deleted": false,
+        "email": "lester6.tester6@gmail.com",
+        "feedbackScore": null,
+        "firstname": "Lester6",
+        "id": 78419,
+        "lastname": "Tester6",
+        "marketable": false,
+        "notes": [],
+        "phoneNumber": null,
+        "picture": null,
+        "productReviews": [],
+        "referredBy": {
+            "firstname": null,
+            "id": null,
+            "lastname": null
+        },
+        "referredByConsumerId": null,
+        "referredConsumers": [],
+        "referredSales": [],
+        "roi": [],
+        "sales": {
+            "orders": [],
+            "summaries": []
+        },
+        "surveys": [],
+        "updatedOnUtc": null
+    },
+    {
+        "businessRefId": "M22123_USAVA_F15B1E4F",
+        "consumerGroups": [
+            {
+                "archived": false,
+                "currentPoints": 15,
+                "id": "6503a1d5-9805-4090-9ea1-f44758a581e4",
+                "name": "Prosumers",
+                "picture": null,
+                "referredSales": [],
+                "roi": [],
+                "sales": [],
+                "storefronts": [],
+                "totalPoints": 15
+            }
+        ],
+        "createdOnUtc": "2024-02-12T19:50:56.273Z",
+        "deleted": false,
+        "email": "stuart.fooks+newpro@quivers.com",
+        "feedbackScore": null,
+        "firstname": "New",
+        "id": 78532,
+        "lastname": "Pro",
+        "marketable": true,
+        "notes": [],
+        "phoneNumber": null,
+        "picture": null,
+        "productReviews": [],
+        "referredBy": {
+            "firstname": null,
+            "id": null,
+            "lastname": null
+        },
+        "referredByConsumerId": null,
+        "referredConsumers": [],
+        "referredSales": [],
+        "roi": [],
+        "sales": {
+            "orders": [],
+            "summaries": []
+        },
+        "surveys": [],
+        "updatedOnUtc": null
+    },
+    {
+        "businessRefId": "M22123_USAVA_F15B1E4F",
+        "consumerGroups": [],
+        "createdOnUtc": "2023-10-30T18:43:49.653Z",
+        "deleted": false,
+        "email": "",
+        "feedbackScore": null,
+        "firstname": "Sean",
+        "id": 78415,
+        "lastname": "Luong",
+        "marketable": false,
+        "notes": [],
+        "phoneNumber": "1231231234",
+        "picture": null,
+        "productReviews": [],
+        "referredBy": {
+            "firstname": null,
+            "id": null,
+            "lastname": null
+        },
+        "referredByConsumerId": null,
+        "referredConsumers": [],
+        "referredSales": [],
+        "roi": [],
+        "sales": {
+            "orders": [],
+            "summaries": []
+        },
+        "surveys": [],
+        "updatedOnUtc": null
+    },
+    {
+        "businessRefId": "M22123_USAVA_F15B1E4F",
+        "consumerGroups": [],
+        "createdOnUtc": "2023-10-30T18:46:23.880Z",
+        "deleted": false,
+        "email": "sean.luong+stuartbrandadmin@quivers.com",
+        "feedbackScore": null,
+        "firstname": "Sean",
+        "id": 78416,
+        "lastname": "Luong",
+        "marketable": false,
+        "notes": [],
+        "phoneNumber": null,
+        "picture": null,
+        "productReviews": [],
+        "referredBy": {
+            "firstname": null,
+            "id": null,
+            "lastname": null
+        },
+        "referredByConsumerId": null,
+        "referredConsumers": [],
+        "referredSales": [],
+        "roi": [],
+        "sales": {
+            "orders": [],
+            "summaries": []
+        },
+        "surveys": [],
+        "updatedOnUtc": null
+    },
+    {
+        "businessRefId": "M22123_USAVA_F15B1E4F",
+        "consumerGroups": [],
+        "createdOnUtc": "2023-10-30T18:51:17.160Z",
+        "deleted": false,
+        "email": "sean.luong+salesrepstuartbrand@quivers.com",
+        "feedbackScore": null,
+        "firstname": "Sean",
+        "id": 78417,
+        "lastname": "Luong",
+        "marketable": false,
+        "notes": [],
+        "phoneNumber": null,
+        "picture": null,
+        "productReviews": [],
+        "referredBy": {
+            "firstname": null,
+            "id": null,
+            "lastname": null
+        },
+        "referredByConsumerId": null,
+        "referredConsumers": [],
+        "referredSales": [],
+        "roi": [],
+        "sales": {
+            "orders": [],
+            "summaries": []
+        },
+        "surveys": [],
+        "updatedOnUtc": null
+    }
+]

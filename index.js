@@ -15,6 +15,7 @@ app.use(bodyParser.json());
 // const userRoutes = require('./services/users/users.routes');
 // const commentRoutes = require('./services/comments/comments.routes');
 const thingRoutes = require('./services/things/things.routes');
+const insightsRoutes = require('./services/insights/insights.routes');
 
 // Import Utils
 const { print_connection } = require('./utilities/global');
@@ -36,6 +37,7 @@ db().then(() => {
     // app.use('/users', userRoutes);
     // app.use('/comments', commentRoutes);
     app.use('/things', thingRoutes);
+    app.use('/insights', insightsRoutes);
 });
 
 // App listen
