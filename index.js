@@ -12,8 +12,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Import Routes
-const userRoutes = require('./services/users/users.routes');
-const commentRoutes = require('./services/comments/comments.routes');
+// const userRoutes = require('./services/users/users.routes');
+// const commentRoutes = require('./services/comments/comments.routes');
+const thingRoutes = require('./services/things/things.routes');
 
 // Import Utils
 const { print_connection } = require('./utilities/global');
@@ -32,8 +33,9 @@ db().then(() => {
         res.json({ message: `Hello from server!`, data: 'Test1' });
     });
 
-    app.use('/users', userRoutes);
-    app.use('/comments', commentRoutes);
+    // app.use('/users', userRoutes);
+    // app.use('/comments', commentRoutes);
+    app.use('/things', thingRoutes);
 });
 
 // App listen
