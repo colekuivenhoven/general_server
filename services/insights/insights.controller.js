@@ -25,13 +25,6 @@ exports.getInsight = async (req, res) => {
             return res.json({ message: 'Error', data: 'Prompt, data, and data_category are required' });
         }
 
-        // req.body = {
-        //     prompt: "Who is the best consumer? And why?",
-        //     data_type: "JSON",
-        //     data_category: "Consumer",
-        //     data: ""
-        // }
-
         const body = {
             prompt: req?.body?.prompt,
             file: JSONToFile(req.body.data, file_name),
@@ -43,10 +36,18 @@ exports.getInsight = async (req, res) => {
         const openai_instance = new openai(api_key);
 
         // Upload a file with an "assistants" purpose
-        const file = await openai_instance.files.create({
-            file: fs.createReadStream(file_name),
-            purpose: "assistants",
-        });
+        let file;
+        try {
+            file = await openai_instance.files.create({
+                file: fs.createReadStream(file_name),
+                purpose: "assistants",
+            });
+        }
+        catch (error) {
+            res.json({ message: 'File Error', data: error });
+            return;
+        }
+        
         const instructions_array = [
             `You are a data analyst working for a B2B company.`,
             `You have been given a ${body.data_category} dataset in ${body.data_type} format to analyze.`,
@@ -61,38 +62,59 @@ exports.getInsight = async (req, res) => {
         const instructions = instructions_array.join(' ');
         
         // Create an assistant with the file
-        const assistant = await openai_instance.beta.assistants.create({
-            instructions: instructions,
-            model: "gpt-4o",
-            tools: [{"type": "code_interpreter"}],
-            tool_resources: {
-                "code_interpreter": {
-                    "file_ids": [file.id]
+        let assistant;
+        try {
+            assistant = await openai_instance.beta.assistants.create({
+                instructions: instructions,
+                model: "gpt-4o",
+                tools: [{"type": "code_interpreter"}],
+                tool_resources: {
+                    "code_interpreter": {
+                        "file_ids": [file.id]
+                    }
                 }
-            }
-        });
+            });
+        }
+        catch (error) {
+            res.json({ message: 'Assistant Error', data: error });
+            return;
+        }
 
         // Create a thread
-        const thread = await openai_instance.beta.threads.create({
-            messages: [
-                {
-                    role: "user",
-                    content: body.prompt,
-                    attachments: [
-                        {
-                            file_id: file.id,
-                            tools: [{type: "code_interpreter"}],
-                        },
-                    ],
-                },
-            ],
-        });
+        let thread;
+        try {
+            thread = await openai_instance.beta.threads.create({
+                messages: [
+                    {
+                        role: "user",
+                        content: body.prompt,
+                        attachments: [
+                            {
+                                file_id: file.id,
+                                tools: [{type: "code_interpreter"}],
+                            },
+                        ],
+                    },
+                ],
+            });
+        }
+        catch (error) {
+            res.json({ message: 'Thread Error', data: error });
+            return;
+        }
 
         // Create a run
-        let run = await openai_instance.beta.threads.runs.create(
-            thread.id,
-            {assistant_id: assistant.id}
-        );
+        let run;
+        try {
+            run = await openai_instance.beta.threads.runs.create(
+                thread.id,
+                {assistant_id: assistant.id}
+            );
+        }
+        catch (error) {
+            res.json({ message: 'Run Error', data: error });
+            return;
+        }
 
         // Get the messages from the thread
         while (run.status !== 'completed') {
@@ -101,10 +123,18 @@ exports.getInsight = async (req, res) => {
         }
 
         // Get the messages from the thread
-        const messages = await openai_instance.beta.threads.messages.list(thread.id);
-        for (const message of messages.data.reverse()) {
-            return_data.result = `${message.content[0].text.value}`
+        let messages;
+        try {
+            messages = await openai_instance.beta.threads.messages.list(thread.id);
+            for (const message of messages.data.reverse()) {
+                return_data.result = `${message.content[0].text.value}`
+            }
         }
+        catch (error) {
+            res.json({ message: 'Messages Error', data: error });
+            return;
+        }
+        
         
         res.json({ message: 'completed', data: return_data });
 
