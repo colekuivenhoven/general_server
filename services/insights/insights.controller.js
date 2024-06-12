@@ -9,6 +9,7 @@ const fs = require('fs');
  * @returns {Object}
  */
 exports.getInsight = async (req, res) => {
+    console.log('/insights/getInsight');
     const api_key = process.env.OPENAI_API_KEY;
     const file_name = req.body.data_category+"-"+Date.now()+".json";
 
@@ -26,10 +27,12 @@ exports.getInsight = async (req, res) => {
         let return_data = {};
 
         // If the prompt, data, and data_category are not provided, return an error
+        console.log(' > Checking for prompt, data, and data_category')
         if (!req?.body?.prompt || !req?.body?.data || !req?.body?.data_category) {
             return res.json({ message: 'Error', data: 'Prompt, data, and data_category are required' });
         }
 
+        console.log(' > Creating body')
         const body = {
             prompt: req?.body?.prompt,
             file: JSONToFile(req.body.data, file_name),
@@ -38,9 +41,11 @@ exports.getInsight = async (req, res) => {
         };
 
         // Create openai instance and create request
+        console.log(' > Creating openai instance')
         const openai_instance = new openai(api_key);
 
         // Upload a file with an "assistants" purpose
+        console.log(' > Uploading file')
         let file;
         try {
             file = await openai_instance.files.create({
@@ -52,6 +57,7 @@ exports.getInsight = async (req, res) => {
             return res.json({ message: 'File Error', data: error });
         }
         
+        console.log(' > Creating instructions')
         const instructions_array = [
             `You are a data analyst working for a B2B company.`,
             `You have been given a ${body.data_category} dataset in ${body.data_type} format to analyze.`,
@@ -66,6 +72,7 @@ exports.getInsight = async (req, res) => {
         const instructions = instructions_array.join(' ');
         
         // Create an assistant with the file
+        console.log(' > Creating assistant')
         let assistant;
         try {
             assistant = await openai_instance.beta.assistants.create({
@@ -84,6 +91,7 @@ exports.getInsight = async (req, res) => {
         }
 
         // Create a thread
+        console.log(' > Creating thread')
         let thread;
         try {
             thread = await openai_instance.beta.threads.create({
@@ -106,6 +114,7 @@ exports.getInsight = async (req, res) => {
         }
 
         // Create a run
+        console.log(' > Creating run')
         let run;
         try {
             run = await openai_instance.beta.threads.runs.create(
@@ -118,12 +127,14 @@ exports.getInsight = async (req, res) => {
         }
 
         // Get the messages from the thread
+        console.log(' > Getting messages 1')
         while (run.status !== 'completed') {
             run = await openai_instance.beta.threads.runs.retrieve(thread.id, run.id);
             //console.log('\nrun', run.status);
         }
 
         // Get the messages from the thread
+        console.log(' > Getting messages 2')
         let messages;
         try {
             messages = await openai_instance.beta.threads.messages.list(thread.id);
@@ -136,6 +147,7 @@ exports.getInsight = async (req, res) => {
         }
 
         // Delete the file
+        console.log(' > Deleting file')
         fs.unlinkSync(file_name);
 
         return res.json({ message: 'completed', data: return_data });
