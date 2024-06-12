@@ -2,7 +2,9 @@
 const openai = require('openai');
 const fs = require('fs');
 const dotenv = require('dotenv');
-dotenv.config();
+dotenv.config({
+    path: '../../.env'
+})
 
 /**
  * * Get an openai insight based on a give prompt and data
