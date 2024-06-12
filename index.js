@@ -4,6 +4,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 
 // Middleware
+app.use(express.json());
 const corsOptions = {
     origin: '*',
 };

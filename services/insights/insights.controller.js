@@ -44,8 +44,7 @@ exports.getInsight = async (req, res) => {
             });
         }
         catch (error) {
-            res.json({ message: 'File Error', data: error });
-            return;
+            return res.json({ message: 'File Error', data: error });
         }
         
         const instructions_array = [
@@ -76,8 +75,7 @@ exports.getInsight = async (req, res) => {
             });
         }
         catch (error) {
-            res.json({ message: 'Assistant Error', data: error });
-            return;
+            return res.json({ message: 'Assistant Error', data: error });
         }
 
         // Create a thread
@@ -99,8 +97,7 @@ exports.getInsight = async (req, res) => {
             });
         }
         catch (error) {
-            res.json({ message: 'Thread Error', data: error });
-            return;
+            return res.json({ message: 'Thread Error', data: error });
         }
 
         // Create a run
@@ -112,8 +109,7 @@ exports.getInsight = async (req, res) => {
             );
         }
         catch (error) {
-            res.json({ message: 'Run Error', data: error });
-            return;
+            return res.json({ message: 'Run Error', data: error });
         }
 
         // Get the messages from the thread
@@ -131,14 +127,13 @@ exports.getInsight = async (req, res) => {
             }
         }
         catch (error) {
-            res.json({ message: 'Messages Error', data: error });
-            return;
+            return res.json({ message: 'Messages Error', data: error });
         }
-        
-        res.json({ message: 'completed', data: return_data });
 
         // Delete the file
         fs.unlinkSync(file_name);
+
+        return res.json({ message: 'completed', data: return_data });
     } catch (error) {
         res.json({ message: 'Error', data: error });
 
