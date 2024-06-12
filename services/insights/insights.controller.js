@@ -11,6 +11,7 @@ const fs = require('fs');
 exports.getInsight = async (req, res) => {
     console.log('/insights/getInsight');
     const api_key = process.env.OPENAI_API_KEY;
+    console.log(' > api key', api_key);
     const file_name = req.body.data_category+"-"+Date.now()+".json";
 
     // Write JSON to file
@@ -42,7 +43,13 @@ exports.getInsight = async (req, res) => {
 
         // Create openai instance and create request
         console.log(' > Creating openai instance')
-        const openai_instance = new openai(api_key);
+        let openai_instance;
+        try {
+            openai_instance = new openai(api_key);
+        }
+        catch (error) {
+            return res.json({ message: 'OpenAI Create Error', data: error });
+        }
 
         // Upload a file with an "assistants" purpose
         console.log(' > Uploading file')
