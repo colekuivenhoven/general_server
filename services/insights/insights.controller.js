@@ -1,4 +1,4 @@
-const Insight = require('./insights.model');
+//const Insight = require('./insights.model');
 const openai = require('openai');
 const fs = require('fs');
 
@@ -134,7 +134,6 @@ exports.getInsight = async (req, res) => {
             res.json({ message: 'Messages Error', data: error });
             return;
         }
-        
         
         res.json({ message: 'completed', data: return_data });
 
