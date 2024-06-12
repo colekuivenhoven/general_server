@@ -13,6 +13,7 @@ dotenv.config()
 exports.getInsight = async (req, res) => {
     console.log('/insights/getInsight');
     const api_key = process.env.OPEN_AI_KEY;
+    console.log('process.env', process.env);
     console.log(' > api key', api_key);
     const file_name = req.body.data_category+"-"+Date.now()+".json";
 
