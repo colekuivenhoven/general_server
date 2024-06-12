@@ -14,7 +14,12 @@ exports.getInsight = async (req, res) => {
 
     // Write JSON to file
     const JSONToFile = (obj, filename) => {
-        return fs.writeFileSync(filename, JSON.stringify(obj, null, 2));
+        try {
+            return fs.writeFileSync(filename, JSON.stringify(obj, null, 2));
+        }
+        catch (error) {
+            return res.json({ message: 'File Error', data: error });
+        }
     }
 
     try {
