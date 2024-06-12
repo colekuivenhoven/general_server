@@ -1,6 +1,8 @@
 //const Insight = require('./insights.model');
 const openai = require('openai');
 const fs = require('fs');
+const dotenv = require('dotenv');
+dotenv.config();
 
 /**
  * * Get an openai insight based on a give prompt and data
