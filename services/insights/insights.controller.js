@@ -13,9 +13,7 @@ dotenv.config()
 exports.getInsight = async (req, res) => {
     console.log('/insights/getInsight');
     const api_key = process.env.OPEN_AI_KEY;
-    console.log('process.env', process.env);
-    console.log(' > api key', api_key);
-    const file_name = req.body.data_category+"-"+Date.now()+".json";
+    const file_name = req.body.dataCategory+"-"+Date.now()+".json";
 
     // Write JSON to file
     const JSONToFile = (obj, filename) => {
@@ -31,8 +29,8 @@ exports.getInsight = async (req, res) => {
         let return_data = {};
 
         // If the prompt, data, and data_category are not provided, return an error
-        console.log(' > Checking for prompt, data, and data_category')
-        if (!req?.body?.prompt || !req?.body?.data || !req?.body?.data_category) {
+        console.log(' > Checking for prompt, data, and dataCategory')
+        if (!req?.body?.prompt || !req?.body?.data || !req?.body?.dataCategory) {
             return res.json({ message: 'Error', data: 'Prompt, data, and data_category are required' });
         }
 
@@ -40,8 +38,6 @@ exports.getInsight = async (req, res) => {
         const body = {
             prompt: req?.body?.prompt,
             file: JSONToFile(req.body.data, file_name),
-            data_type: "JSON",
-            data_category: req?.body?.data_category || "",
         };
 
         // Create openai instance and create request
@@ -68,18 +64,7 @@ exports.getInsight = async (req, res) => {
         }
         
         console.log(' > Creating instructions')
-        const instructions_array = [
-            `You are a data analyst working for a B2B company.`,
-            `You have been given a ${body.data_category} dataset in ${body.data_type} format to analyze.`,
-            `You need to very briefly provide insights based on the data by understanding data distributions, patterns, and anomalies.`,
-            `Be able to identify relationships and correlations among variables.`,
-            `Never address specific data points using id numbers or indices, but rather using names if available.`,
-            `Never ask for more data than what is provided in the dataset.`,
-            `Never ask any questions.`,
-            `Do not include any introductory or concluding statements.`,
-            `Remember to NEVER ask for more data than what is provided in the dataset or ask any questions. Just try your best to provide insights based on the data provided.`
-        ];
-        const instructions = instructions_array.join(' ');
+        const instructions = req.body.instructions.join(' ');
         
         // Create an assistant with the file
         console.log(' > Creating assistant')
