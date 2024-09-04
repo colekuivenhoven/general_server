@@ -72,7 +72,7 @@ exports.getInsight = async (req, res) => {
         try {
             assistant = await openai_instance.beta.assistants.create({
                 instructions: instructions,
-                model: "gpt-4o",
+                model: "gpt-4-turbo",
                 tools: [{"type": "code_interpreter"}],
                 tool_resources: {
                     "code_interpreter": {
